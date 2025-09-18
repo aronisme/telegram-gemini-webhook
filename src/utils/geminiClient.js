@@ -6,7 +6,8 @@ dotenv.config();
 const callGeminiAPI = async (message) => {
   try {
     const response = await axios.post(
-      'https://api.gemini.com/v1/whatever-endpoint', // Ganti dengan endpoint Gemini yang sesuai
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent
+',
       { prompt: message },
       {
         headers: {
